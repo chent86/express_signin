@@ -1,0 +1,34 @@
+//- doctype html
+//- html
+//-   head
+//-     meta(charset='utf-8')
+//-     script(type='text/javascript', src='login/login.js')
+//-     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js')
+//-     script(src='https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js')
+//-     script(src='/encrypt/jquery.md5.js')
+//-     link(rel='stylesheet', type='text/css', href='login/login.css')
+//-     link(rel='shortcut icon', href='/picture/flag.png')
+//-     title mform
+//-   body
+extend layout
+
+block content
+    #main
+      #m_icon
+      h1 Sign in to mform
+      #form
+        p#a.hide.warning
+        p.title Username
+        input.info(name='username', autocomplete='off')
+        br
+        br
+        p#b.hide.warning
+        p.title Password
+        input.info(type='password', name='password', autocomplete='off')
+        br
+        #submit Sign in
+        #register
+          | New to mform?
+          a(href='http://localhost:8000/regist') Create an account
+          | .
+      p#e.hide.warning Please register first!

@@ -7,14 +7,14 @@ h1 {
 
 body {
   background-color: #2b3137;
-  background-image: url("/picture/simple-codelines.svg");
+  background-image: url("/images/simple-codelines.svg");
 }
 
 #m_icon {
   position: absolute;
   top: -158px;
   left: 122px;
-  background-image: url("/picture/flag.png");
+  background-image: url("/images/flag.png");
   width: 132px;
   height: 154px;
 }

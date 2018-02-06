@@ -1,0 +1,50 @@
+//- doctype html
+//- html
+//-   head
+//-     meta(charset='utf-8')
+//-     script(type='text/javascript', src='register/register.js')
+//-     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js')
+//-     script(src='/encrypt/jquery.md5.js')
+//-     link(rel='stylesheet', type='text/css', href='register/register.css')
+//-     link(rel='shortcut icon', href='/picture/flag.png')
+//-     script(type='text/javascript', src='login/login.js')
+//-     title mform
+//-   body
+extend layout
+
+block content
+    #main
+      h1 Sign up for mform
+      #form
+        p#a.hide.warning
+        p.title Username
+        input.info(name='username', autocomplete='off')
+        br
+        p#b.hide.warning
+        p.title Password
+        input.info(type='password', name='password', autocomplete='off')
+        br
+        p#c.hide.warning
+        p.title Confirm your password
+        input.info(type='password', name='confirm', autocomplete='off')
+        br
+        p#d.hide.warning
+        p.title Id
+        input.info(name='number', autocomplete='off')
+        br
+        p#e.hide.warning
+        p.title Telephone
+        input.info(name='tel', autocomplete='off')
+        br
+        p#f.hide.warning
+        p.title E-mail
+        input.info(name='mail', autocomplete='off')
+        br
+        #set Reset
+        #submit Sign up!
+        #login
+          | Already registered?
+          a(href='http://localhost:8000') Go to login
+          | .
+        link(rel='stylesheet', type='text/css', href='stylesheets/register.css')
+        script(type='text/javascript', src='javascripts/register.js')
